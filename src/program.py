@@ -43,6 +43,8 @@ port = serial.Serial('/dev/ttyUSB0', 9600)
 xbee = XBee(port)
 
 while True:
+    # Draw a black filled box to clear the image
+    draw.rectangle((0, 0, width, height), outline=0, fill=0)
 
     # Fetch data from XBee 1
     xbee.remote_at(
