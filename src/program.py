@@ -66,8 +66,8 @@ while True:
     t2f = t2c * 1.8 + 32
 
     # Write output
-    draw.text((x, top + 0), "XBee A: " + t1f, font=font, fill=255)
-    draw.text((x, top + 8), "XBee C: " + t2f, font=font, fill=255)
+    draw.text((x, top + 0), "XBee A: " + str(t1f), font=font, fill=255)
+    draw.text((x, top + 8), "XBee C: " + str(t2f), font=font, fill=255)
 
     # Display image
     disp.image(image)
